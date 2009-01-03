@@ -1,0 +1,69 @@
+<?php
+
+$header = array('job','subjob','fullname');
+
+$data['presentation'] = array(
+  'title' => '{presentation}',
+  'name'  => '{presentation}',
+  'code'  => 'presentation',
+  'hide'  => false,
+  'type'  => 'ListParamWithPhoto',
+  'menu'  => true,
+);
+$data['presentation']['data'] = array(
+  'lastname', 'firstname', 'nationality', 'age','birthdate', 'birthplace',
+  'address', 'homephone', 'portphone', 'email', 'MSN', 'Skype', 'ICQ', 'Jabber'
+);
+
+$data['knowledge'] = array(
+  'title' => '{knowledge_datapreocessing}',
+  'name'  => '{competence}',
+  'code'  => 'knowledge',
+  'hide'  => true,
+  'type'  => 'TopBottom',
+  'menu'  => true,
+);
+$data['knowledge']['data'] = array(
+  'type','list'
+);
+
+$data['experiences'] = array(
+  'title' => '{experience_professionnel}',
+  'name'  => '{experience}',
+  'code'  => 'experiences',
+  'hide'  => true,
+  'type'  => 'Experience',
+  'menu'  => true,
+);
+$data['experiences']['data'] = array(
+  'year','job','duration','place','company',
+  'mission','action','Programmer','techno'
+);
+
+$data['studies'] = array(
+  'title' => '{formation}',
+  'name'  => '{formation}',
+  'code'  => 'studies',
+  'hide'  => true,
+  'type'  => 'TopBottom',
+  'menu'  => true,
+);
+$data['studies']['data'] = array(
+  'year','school'
+);
+
+$data['others'] = array(
+  'title' => '{other}',
+  'name'  => '{other}',
+  'code'  => 'others',
+  'hide'  => true,
+  'type'  => 'TopBottom',
+  'menu'  => true,
+);
+$data['others']['data'] = array(
+  'type','list'
+);
+
+
+
+?>
